@@ -1,16 +1,11 @@
-/* ================================================================
-   NETFLIX INDIA — RESPONSIVE MEDIA QUERIES
-   Mobile-first, polished, attractive
-   ================================================================ */
-
-/* ── 1. GLOBAL MOBILE RESETS (applied ≤ 767px) ───────────────── */
+/* for mobile phone (767px) */
 @media (max-width: 767px) {
 
   html {
     scroll-behavior: smooth;
   }
 
-  /* ── NAV ── */
+  
   nav {
     max-width: 100%;
     width: 100%;
@@ -49,7 +44,7 @@
     padding: 0;
   }
 
-  /* ── HERO ── */
+  
   .main {
     height: auto;
     min-height: 100svh;
@@ -113,7 +108,7 @@
     cursor: pointer;
   }
 
-  /* ── TRENDING ── */
+  
   #section1 {
     margin-top: 40px;
     margin-left: 0;
@@ -178,7 +173,7 @@
     background: rgba(0, 0, 0, 0.65);
   }
 
-  /* ── MORE REASONS ── */
+  
   .section2 {
     margin-top: 48px;
   }
@@ -230,7 +225,7 @@
     top: auto;
   }
 
-  /* ── FAQ ── */
+  
   .faqs h1 {
     margin-top: 60px;
     padding-left: 20px;
@@ -279,7 +274,7 @@
     line-height: 1.7;
   }
 
-  /* ── SECTION 3 CTA ── */
+  
   #section3 {
     margin-top: 64px;
     padding: 0 20px;
@@ -318,7 +313,7 @@
     border-radius: 6px;
   }
 
-  /* ── FOOTER ── */
+  
   #last {
     margin-top: 56px;
     padding-left: 20px;
@@ -366,7 +361,7 @@
   }
 }
 
-/* ── 2. VERY SMALL PHONES (< 400px) ─────────────────────────── */
+/* VERY SMALL PHONES (< 400px) */
 @media (max-width: 399px) {
 
   nav img {
@@ -411,7 +406,7 @@
   }
 }
 
-/* ── 3. TABLET PORTRAIT (768px – 1023px) ────────────────────── */
+/*  TABLET PORTRAIT (768px – 1023px) */
 @media (max-width: 1023px) and (min-width: 768px) {
 
   nav {
@@ -489,7 +484,7 @@
     font-size: 1.35rem;
   }
 
-  /* 2-col grid for reason cards */
+  
   .cardsection2 {
     flex-wrap: wrap;
     margin: 0 30px;
@@ -588,7 +583,7 @@
   }
 }
 
-/* ── 4. SMALL DESKTOP (1024px – 1279px) ─────────────────────── */
+/* SMALL DESKTOP (1024px – 1279px) */
 @media (max-width: 1279px) and (min-width: 1024px) {
 
   .hero > :nth-child(1),
@@ -618,7 +613,7 @@
   }
 }
 
-/* ── 5. LARGE DESKTOP (1400px+) ──────────────────────────────── */
+/* LARGE DESKTOP (1400px+) */
 @media (min-width: 1400px) {
 
   nav {
@@ -646,7 +641,7 @@
   }
 }
 
-/* ── 6. TOUCH DEVICES — disable hover effects ────────────────── */
+/* TOUCH DEVICES — disable hover effects */
 @media (hover: none) {
   .card:hover {
     transform: none;
@@ -658,7 +653,7 @@
   }
 }
 
-/* ── 7. REDUCE MOTION ────────────────────────────────────────── */
+/* REDUCE MOTION */
 @media (prefers-reduced-motion: reduce) {
   .card:hover {
     transform: none;
