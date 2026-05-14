@@ -1,0 +1,670 @@
+/* ================================================================
+   NETFLIX INDIA — RESPONSIVE MEDIA QUERIES
+   Mobile-first, polished, attractive
+   ================================================================ */
+
+/* ── 1. GLOBAL MOBILE RESETS (applied ≤ 767px) ───────────────── */
+@media (max-width: 767px) {
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* ── NAV ── */
+  nav {
+    max-width: 100%;
+    width: 100%;
+    padding: 14px 20px;
+    height: auto;
+    box-sizing: border-box;
+  }
+
+  nav img {
+    width: 100px !important;
+  }
+
+  #twoButton {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  nav #ln {
+    padding: 0;
+    width: auto;
+  }
+
+  #op {
+    width: 90px;
+    height: 30px;
+    font-size: 0.78rem;
+    padding: 0 6px;
+  }
+
+  nav #in {
+    width: 70px;
+    height: 30px;
+    font-size: 0.8rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* ── HERO ── */
+  .main {
+    height: auto;
+    min-height: 100svh;
+    background-size: cover !important;
+  }
+
+  .box {
+    height: 100%;
+    min-height: 100svh;
+    position: absolute;
+  }
+
+  .hero {
+    height: auto;
+    min-height: calc(100svh - 58px);
+    padding: 40px 24px 60px;
+    gap: 18px;
+    justify-content: center;
+  }
+
+  .hero > :nth-child(1),
+  .hero > :nth-child(2) {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .hero > :nth-child(3) {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .hero > :nth-child(4) {
+    font-size: 13px;
+    line-height: 20px;
+    max-width: 340px;
+    margin: 0 auto;
+  }
+
+  .form {
+    flex-direction: column;
+    width: 100%;
+    max-width: 360px;
+    gap: 12px;
+    background: transparent;
+  }
+
+  #emailbtn {
+    width: 100%;
+    height: 52px;
+    font-size: 15px;
+    border-radius: 6px;
+  }
+
+  #insidehero {
+    width: 100%;
+    height: 52px;
+    font-size: 1.1rem;
+    letter-spacing: 0.3px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  /* ── TRENDING ── */
+  #section1 {
+    margin-top: 40px;
+    margin-left: 0;
+  }
+
+  #trend {
+    padding: 0 0 0 20px;
+    font-size: 1.25rem;
+    margin-bottom: 4px;
+  }
+
+  #cardsection {
+    gap: 28px;
+    padding: 20px 16px 24px;
+    margin-left: 0;
+    margin-right: 0;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+  }
+
+  .card {
+    width: 48vw;
+    scroll-snap-align: start;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  }
+
+  .card img {
+    width: 48vw;
+    border-radius: 10px;
+    display: block;
+  }
+
+  .card span {
+    font-size: 5rem;
+    left: -14px;
+    top: 28%;
+    -webkit-text-stroke: 2px rgba(255, 255, 255, 0.7);
+  }
+
+  .swapbtnLeft {
+    width: 32px;
+    height: 54px;
+    font-size: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 2px;
+    z-index: 20;
+    border-radius: 0 8px 8px 0;
+    background: rgba(0, 0, 0, 0.65);
+  }
+
+  .swapbtnRight {
+    width: 32px;
+    height: 54px;
+    font-size: 1rem;
+    bottom: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 2px;
+    border-radius: 8px 0 0 8px;
+    background: rgba(0, 0, 0, 0.65);
+  }
+
+  /* ── MORE REASONS ── */
+  .section2 {
+    margin-top: 48px;
+  }
+
+  .section2 #join {
+    padding-left: 20px;
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+  }
+
+  .cardsection2 {
+    flex-direction: column;
+    margin: 0 20px;
+    gap: 16px;
+    align-items: stretch;
+  }
+
+  .cardsec2 {
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    padding: 24px 20px 80px;
+    border-radius: 12px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .cardsection2 h1 {
+    font-size: 1.2rem;
+    margin: 0 0 10px 0;
+    line-height: 1.35;
+  }
+
+  .section2 p {
+    font-size: 0.9rem;
+    margin-left: 0;
+    line-height: 1.6;
+    opacity: 0.85;
+  }
+
+  .cardsec2 img {
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    left: auto;
+    top: auto;
+  }
+
+  /* ── FAQ ── */
+  .faqs h1 {
+    margin-top: 60px;
+    padding-left: 20px;
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+  }
+
+  .box2 {
+    margin: 0 16px;
+    gap: 8px;
+  }
+
+  .sol {
+    border-radius: 6px;
+    overflow: hidden;
+  }
+
+  .faq {
+    height: auto;
+    min-height: 60px;
+    padding: 18px 52px 18px 18px;
+    align-items: center;
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(255,255,255,0.05);
+  }
+
+  .faq span {
+    font-size: 1rem;
+    padding: 0;
+    line-height: 1.45;
+  }
+
+  .faq img {
+    position: absolute;
+    right: 16px;
+    left: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+  }
+
+  .inner {
+    font-size: 0.95rem;
+    padding: 20px 18px;
+    line-height: 1.7;
+  }
+
+  /* ── SECTION 3 CTA ── */
+  #section3 {
+    margin-top: 64px;
+    padding: 0 20px;
+  }
+
+  .ready {
+    font-size: 1rem;
+    text-align: center;
+    padding: 0 10px;
+    line-height: 1.5;
+    margin-bottom: 16px;
+  }
+
+  .inner3 {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .sec3Email {
+    width: 100%;
+    max-width: 380px;
+    height: 52px;
+    font-size: 0.95rem;
+    color: white;
+    box-sizing: border-box;
+    border-radius: 6px;
+  }
+
+  #get {
+    width: 100%;
+    max-width: 380px;
+    height: 52px;
+    font-size: 1.15rem;
+    font-weight: 600;
+    border-radius: 6px;
+  }
+
+  /* ── FOOTER ── */
+  #last {
+    margin-top: 56px;
+    padding-left: 20px;
+    font-size: 0.9rem;
+  }
+
+  .links {
+    margin: 28px 20px 0;
+  }
+
+  .links ul {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px 20px;
+  }
+
+  .links a {
+    font-size: 0.82rem;
+  }
+
+  .lastbtn {
+    padding-left: 20px;
+    margin-top: 28px;
+    margin-bottom: 16px;
+  }
+
+  .lastbtn #footerOp {
+    width: 50vw;
+    max-width: 200px;
+    height: 40px;
+    font-size: 0.85rem;
+    border-radius: 5px;
+  }
+
+  #close p {
+    padding-left: 20px;
+    margin-bottom: 12px;
+    font-size: 0.75rem;
+  }
+
+  .copy {
+    font-size: 1rem;
+    margin-bottom: 48px;
+    text-align: center;
+    padding: 0 20px;
+  }
+}
+
+/* ── 2. VERY SMALL PHONES (< 400px) ─────────────────────────── */
+@media (max-width: 399px) {
+
+  nav img {
+    width: 88px !important;
+  }
+
+  #op {
+    width: 78px;
+    font-size: 0.73rem;
+  }
+
+  nav #in {
+    width: 60px;
+    font-size: 0.73rem;
+  }
+
+  .hero > :nth-child(1),
+  .hero > :nth-child(2) {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .hero > :nth-child(3) {
+    font-size: 14px;
+  }
+
+  .card,
+  .card img {
+    width: 56vw;
+  }
+
+  .cardsec2 {
+    padding: 22px 16px 76px;
+  }
+
+  .cardsection2 h1 {
+    font-size: 1.1rem;
+  }
+
+  .faq span {
+    font-size: 0.92rem;
+  }
+}
+
+/* ── 3. TABLET PORTRAIT (768px – 1023px) ────────────────────── */
+@media (max-width: 1023px) and (min-width: 768px) {
+
+  nav {
+    max-width: 92vw;
+    padding: 12px 20px;
+  }
+
+  .hero > :nth-child(1),
+  .hero > :nth-child(2) {
+    font-size: 40px;
+    line-height: 46px;
+  }
+
+  .hero > :nth-child(3) {
+    font-size: 18px;
+  }
+
+  .form {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    max-width: 500px;
+  }
+
+  #emailbtn {
+    width: 460px;
+    height: 54px;
+    font-size: 15px;
+  }
+
+  #insidehero {
+    width: 460px;
+    height: 54px;
+    font-size: 1.2rem;
+  }
+
+  #trend {
+    padding-left: 40px;
+    font-size: 1.35rem;
+  }
+
+  #cardsection {
+    margin-left: 20px;
+    margin-right: 60px;
+    gap: 40px;
+    padding: 24px 20px;
+    scroll-snap-type: x mandatory;
+  }
+
+  .card,
+  .card img {
+    width: 26vw;
+    scroll-snap-align: start;
+  }
+
+  .card span {
+    font-size: 7rem;
+    left: -22px;
+  }
+
+  .swapbtnLeft {
+    width: 36px;
+    left: 0;
+    height: 18vh;
+  }
+
+  .swapbtnRight {
+    width: 36px;
+    right: 0;
+    height: 18vh;
+  }
+
+  .section2 #join {
+    padding-left: 30px;
+    font-size: 1.35rem;
+  }
+
+  /* 2-col grid for reason cards */
+  .cardsection2 {
+    flex-wrap: wrap;
+    margin: 0 30px;
+    gap: 18px;
+    justify-content: center;
+    align-items: stretch;
+  }
+
+  .cardsec2 {
+    width: calc(50% - 9px);
+    height: auto;
+    min-height: 220px;
+    padding: 24px 20px 90px;
+    border-radius: 12px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .cardsec2 img {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    top: auto;
+    left: auto;
+    width: 64px;
+    height: 64px;
+  }
+
+  .cardsection2 h1 {
+    font-size: 1.2rem;
+  }
+
+  .faqs h1 {
+    padding-left: 30px;
+  }
+
+  .box2 {
+    margin: 0 30px;
+  }
+
+  .faq img {
+    left: auto;
+    right: 18px;
+    width: 28px;
+    height: 28px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .inner {
+    font-size: 1.1rem;
+    padding: 24px 30px;
+  }
+
+  .inner3 {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .sec3Email {
+    width: 60vw;
+    height: 56px;
+  }
+
+  #get {
+    width: 60vw;
+    height: 56px;
+    font-size: 1.3rem;
+  }
+
+  #last {
+    padding-left: 30px;
+  }
+
+  .links {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .links ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .lastbtn {
+    padding-left: 30px;
+  }
+
+  .lastbtn #footerOp {
+    width: 24vw;
+  }
+
+  #close p {
+    padding-left: 30px;
+  }
+}
+
+/* ── 4. SMALL DESKTOP (1024px – 1279px) ─────────────────────── */
+@media (max-width: 1279px) and (min-width: 1024px) {
+
+  .hero > :nth-child(1),
+  .hero > :nth-child(2) {
+    font-size: 44px;
+    line-height: 50px;
+  }
+
+  .cardsec2 {
+    width: 21vw;
+  }
+
+  .cardsec2 img {
+    left: 140px;
+    top: 190px;
+    width: 70px;
+    height: 70px;
+  }
+
+  #emailbtn {
+    width: 300px;
+  }
+
+  #insidehero {
+    width: 190px;
+    font-size: 1.3rem;
+  }
+}
+
+/* ── 5. LARGE DESKTOP (1400px+) ──────────────────────────────── */
+@media (min-width: 1400px) {
+
+  nav {
+    max-width: 78vw;
+  }
+
+  .hero > :nth-child(1),
+  .hero > :nth-child(2) {
+    font-size: 60px;
+    line-height: 66px;
+  }
+
+  .hero > :nth-child(3) {
+    font-size: 22px;
+  }
+
+  #emailbtn {
+    width: 400px;
+    height: 60px;
+  }
+
+  #insidehero {
+    width: 240px;
+    height: 60px;
+  }
+}
+
+/* ── 6. TOUCH DEVICES — disable hover effects ────────────────── */
+@media (hover: none) {
+  .card:hover {
+    transform: none;
+    transition: none;
+  }
+  .swapbtnLeft:hover,
+  .swapbtnRight:hover {
+    background: rgba(46, 46, 46, 0.5);
+  }
+}
+
+/* ── 7. REDUCE MOTION ────────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  .card:hover {
+    transform: none;
+    transition: none;
+  }
+  #cardsection {
+    scroll-behavior: auto;
+  }
+}
