@@ -12,6 +12,7 @@ btnleft.addEventListener("click", function () {
 let btnright = document.querySelector(".swapbtnRight");
 btnright.addEventListener("click", function () {
     container.scrollLeft += scroll;
+    
 });
 
 window.addEventListener('resize', () => {
